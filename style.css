@@ -5,5 +5,29 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url(background\ image.jpg);
+    background-image: url(background\ image.jpg);      
+
+    margin: 0;
 }
+.Container{
+    text-align: center;
+     color: #fff; 
+}
+.Coding text {
+         background: url(sorting\ text.gif)
+         repeat;
+         -webkit-background-clip: text;
+         background-clip: text;
+         animation: animate 5s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        background-position: 0% 0%;
+    }
+    100%{
+        background-position: 100% 100%;
+    }
+
+}
+  
