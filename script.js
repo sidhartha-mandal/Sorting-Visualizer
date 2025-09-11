@@ -12,3 +12,12 @@ const generateArray = () => {
 
     }
 }
+const Bubble_sort = async() => {
+    const bars = document.querySelectorAll(".array-bar");
+    for(let i =0;i <bars.length-1;i++){
+        for(let j = 0;j<bars.length; j++){
+            bars[j].style.backgroundColor = "#ff6f61";
+            bars[j+1].style.backgroundColor = "#ff6f61";
+        }
+    }
+}
