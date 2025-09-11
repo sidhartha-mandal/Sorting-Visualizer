@@ -6,7 +6,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url(background\ image.jpg);
+     background-image: url(background\ image.jpg); 
 
     margin: 0;
 }
@@ -16,8 +16,18 @@ body {
     color: #fff;
 }
 
+h1 {
+    margin-bottom: 10px;
+    font-size: 6rem;
+    position: relative;
+    display: inline-block;
+    color: transparent;
+    opacity: 0.9;
+}
+
 .Coding text {
-    background: url(sorting\ text.gif) repeat;
+    background: url(sorting\ text.gif) ;
+    
     -webkit-background-clip: text;
     background-clip: text;
     animation: animate 5s linear infinite;
@@ -64,6 +74,7 @@ button {
     font-weight: 500;
     transition: background-color 0.3s;
 }
+
 button:hover {
     background-color: aquamarine;
 }
