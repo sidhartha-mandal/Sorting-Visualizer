@@ -22,5 +22,26 @@ async function swap(el1, el2) {
     }, 45);
   });
 }
-
+// Selection Sort
+async function selectionSort() {
+  const bars = document.querySelectorAll(".bar");
+  for (let i = 0; i < bars.length; i++) {
+    let minIndex = i;
+    bars[i].style.background = "red";
+    for (let j = i + 1; j < bars.length; j++) {
+      bars[j].style.background = "yellow";
+      if (parseInt(bars[j].style.height) < parseInt(bars[minIndex].style.height)) {
+        if (minIndex !== i) {
+          bars[minIndex].style.background = "#17a2b8";
+        }
+        minIndex = j;
+      } else {
+        bars[j].style.background = "#17a2b8";
+      }
+    }
+    await swap(bars[minIndex], bars[i]);
+    bars[minIndex].style.background = "#17a2b8";
+    bars[i].style.background = "green";
+  }
+}
 
