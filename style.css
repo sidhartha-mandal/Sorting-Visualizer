@@ -26,8 +26,8 @@ h1 {
 }
 
 .Coding text {
-    background: url(sorting\ text.gif) ;
-    
+    background: url(sorting\ text.gif) 
+    repet;
     -webkit-background-clip: text;
     background-clip: text;
     animation: animate 5s linear infinite;

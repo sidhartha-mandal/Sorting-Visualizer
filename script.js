@@ -14,7 +14,7 @@ const generateArray = () => {
 }
 const Bubble_sort = async () => {
     const bars = document.querySelectorAll(".array-bar");
-    for (let i = 0; i < bars.length - 1; i++) {
+    for (let i = 0; i < bars.length; i++) {
         for (let j = 0; j < bars.length - i - 1; j++) {
             bars[j].style.backgroundColor = "#ff6f61";
             bars[j + 1].style.backgroundColor = "#ff6f61";
@@ -24,19 +24,19 @@ const Bubble_sort = async () => {
             bars[j].style.backgroundColor = "white"; //reset colors after comparision
             bars[j + 1].style.backgroundColor = "white";
         }
-        bars[bars.length - 1 - i].style.backgroundColor = "#6b6b6b"
+        bars[bars.length - i - 1].style.backgroundColor = "#6b6b6b"
     }
 }
 
 const swap = (bar1, bar2) => {
-    return new Promise((resolve) => {
-        const tempHeight = bar1.style.height;
-        bar1.style.height = bar2.style.height;
-        bar2.style.height = tempHeight;
-        setTimeout(() => {
-            resolve();
-        }, 300) // delay for visualization
-    })
+    return new Promise(resolve => {
+    setTimeout(() => {
+      let temp = el1.style.height;
+      el1.style.height = el2.style.height;
+      el2.style.height = temp;
+      resolve();
+    }, 45); //   delay for the visualization
+  });
 }
 generateArray();
 
