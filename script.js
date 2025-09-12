@@ -19,7 +19,7 @@ async function swap(el1, el2) {
       el1.style.height = el2.style.height;
       el2.style.height = temp;
       resolve();
-    }, 45);
+    }, 30);
   });
 }
 // Bubble Sort
@@ -73,4 +73,4 @@ async function insertionSort() {
     bars[i].style.background = "green";
   }
 }
-
+generateArray();
