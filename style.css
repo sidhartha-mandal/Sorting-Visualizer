@@ -2,13 +2,11 @@
 
 body {
     font-family: "Raleway", sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-     background-image: url(background\ image.jpg); 
-
-    margin: 0;
+    text-align: center;
+  background: #f4f4f9;
+  margin: 0;
+  padding: 20px;
+  background-image:url(background\ image.jpg);
 }
 
 .Container {

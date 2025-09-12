@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sorting visualizer</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorting Visualizer</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="Container">
-        <h1 class="Coding text">Sorting Visualizer</h1>
-        <div class="array-container" id="array-container"></div>
-        <button onclick="generateArray()">Generate new arrray</button>
-        <button onclick="Bubble_sort()">Bubble_sort</button>
+  <h1>Sorting Visualizer</h1>
 
-    </div>
-    
+  <div class="controls">
+    <button onclick="generateArray()">Generate New Array</button>
+    <button onclick="bubbleSort()">Bubble Sort</button>
+    <button onclick="selectionSort()">Selection Sort</button>
+    <button onclick="insertionSort()">Insertion Sort</button>
+  </div>
+
+  <div id="array-container"></div>
+
+  <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
