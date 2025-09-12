@@ -60,4 +60,17 @@ async function selectionSort() {
     bars[i].style.background = "green";
   }
 }
+// Insertion Sort
+async function insertionSort() {
+  const bars = document.querySelectorAll(".bar");
+  for (let i = 1; i < bars.length; i++) {
+    let j = i;
+    bars[i].style.background = "red";
+    while (j > 0 && parseInt(bars[j].style.height) < parseInt(bars[j - 1].style.height)) {
+      await swap(bars[j], bars[j - 1]);
+      j--;
+    }
+    bars[i].style.background = "green";
+  }
+}
 
